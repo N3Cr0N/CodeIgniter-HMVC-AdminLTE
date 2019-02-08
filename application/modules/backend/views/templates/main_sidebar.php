@@ -73,7 +73,7 @@
             <li><a href="<?php echo base_url(); ?>backend/chartjs"><i class="fa fa-circle-o"></i> ChartJS</a></li>
             <li><a href="<?php echo base_url(); ?>backend/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="<?php echo base_url(); ?>backend/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
