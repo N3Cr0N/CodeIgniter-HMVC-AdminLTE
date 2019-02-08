@@ -124,4 +124,16 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('charts/inline', $this->data);
     }
+
+    public function general()
+    {
+        // Display page with internal ci function
+        $this->load->view('ui/general', $this->data);
+    }
+
+    public function icons()
+    {
+        // Display page with internal ci function
+        $this->load->view('ui/icons', $this->data);
+    }
 }
