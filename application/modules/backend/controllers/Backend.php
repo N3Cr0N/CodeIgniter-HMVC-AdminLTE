@@ -196,4 +196,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('calendar/calendar', $this->data);
     }
+
+    public function mailbox()
+    {
+        // Display page with internal ci function
+        $this->load->view('mailbox/mailbox', $this->data);
+    }
 }
