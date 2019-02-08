@@ -106,10 +106,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('charts/chartjs', $this->data);
     }
-/*
-    public function index2()
+
+    public function morris()
     {
         // Display page with internal ci function
-        $this->load->view('widgets/widgets', $this->data);
-    }*/
+        $this->load->view('charts/morris', $this->data);
+    }
 }
