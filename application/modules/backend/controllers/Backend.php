@@ -136,4 +136,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('ui/icons', $this->data);
     }
+
+    public function buttons()
+    {
+        // Display page with internal ci function
+        $this->load->view('ui/buttons', $this->data);
+    }
 }
