@@ -114,8 +114,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/simple"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/data"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
