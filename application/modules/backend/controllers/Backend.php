@@ -148,4 +148,16 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('ui/sliders', $this->data);
     }
+
+    public function timeline()
+    {
+        // Display page with internal ci function
+        $this->load->view('ui/timeline', $this->data);
+    }
+
+    public function modals()
+    {
+        // Display page with internal ci function
+        $this->load->view('ui/modals', $this->data);
+    }
 }
