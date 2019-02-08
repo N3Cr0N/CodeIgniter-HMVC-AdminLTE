@@ -87,7 +87,7 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url(); ?>backend/general"><i class="fa fa-circle-o"></i> General</a></li>
             <li><a href="<?php echo base_url(); ?>backend/icons"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
             <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
