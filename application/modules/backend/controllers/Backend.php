@@ -118,4 +118,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('charts/flot', $this->data);
     }
+
+    public function inline()
+    {
+        // Display page with internal ci function
+        $this->load->view('charts/inline', $this->data);
+    }
 }
