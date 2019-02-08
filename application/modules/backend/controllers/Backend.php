@@ -190,4 +190,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('tables/data', $this->data);
     }
+
+    public function calendar()
+    {
+        // Display page with internal ci function
+        $this->load->view('calendar/calendar', $this->data);
+    }
 }
