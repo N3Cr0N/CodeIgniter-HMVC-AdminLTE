@@ -112,4 +112,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('charts/morris', $this->data);
     }
+
+    public function flot()
+    {
+        // Display page with internal ci function
+        $this->load->view('charts/flot', $this->data);
+    }
 }
