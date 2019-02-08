@@ -166,4 +166,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('forms/general', $this->data);
     }
+
+    public function forms_advanced()
+    {
+        // Display page with internal ci function
+        $this->load->view('forms/advanced', $this->data);
+    }
 }
