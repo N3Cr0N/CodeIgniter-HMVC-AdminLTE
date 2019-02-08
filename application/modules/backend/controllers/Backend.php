@@ -100,16 +100,16 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('widgets/widgets', $this->data);
     }
+
+    public function chartjs()
+    {
+        // Display page with internal ci function
+        $this->load->view('charts/chartjs', $this->data);
+    }
 /*
     public function index2()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('dashboard/index2', $this->data);
-    }
-
-    public function index2()
-    {
-        // Display page with render_page function from BackendController
-        $this->render_page('dashboard/index2', $this->data);
+        // Display page with internal ci function
+        $this->load->view('widgets/widgets', $this->data);
     }*/
 }
