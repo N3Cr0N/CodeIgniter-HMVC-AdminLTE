@@ -412,7 +412,7 @@
     <section class="content">
       <div class="row">
         <div class="col-md-3">
-          <a href="compose.html" class="btn btn-primary btn-block margin-bottom">Compose</a>
+          <a href="<?php echo base_url(); ?>backend/compose" class="btn btn-primary btn-block margin-bottom">Compose</a>
 
           <div class="box box-solid">
             <div class="box-header with-border">
@@ -500,7 +500,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-name"><a href="<?php echo base_url(); ?>backend/read_mail">Alexander Pierce</a></td>
                     <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"></td>
@@ -935,6 +935,6 @@
   });
 </script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+<script src="<?php echo base_url(); ?>assets/backend/AdminLTE/dist/js/demo.js"></script>
 </body>
 </html>
