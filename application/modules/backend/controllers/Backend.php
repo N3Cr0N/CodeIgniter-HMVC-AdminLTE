@@ -160,4 +160,10 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('ui/modals', $this->data);
     }
+
+    public function forms_general()
+    {
+        // Display page with internal ci function
+        $this->load->view('forms/general', $this->data);
+    }
 }
