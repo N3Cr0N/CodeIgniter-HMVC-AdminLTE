@@ -214,4 +214,22 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('mailbox/compose', $this->data);
     }
+
+    public function error_404()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/error_404', $this->data);
+    }
+
+    public function error_500()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/error_500', $this->data);
+    }
+
+    public function register()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/register', $this->data);
+    }
 }
