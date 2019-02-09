@@ -232,4 +232,40 @@ class Backend extends BackendController
         // Display page with internal ci function
         $this->load->view('examples/register', $this->data);
     }
+
+    public function profile()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/profile', $this->data);
+    }
+
+    public function pace()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/pace', $this->data);
+    }
+
+    public function login()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/login', $this->data);
+    }
+
+    public function lockscreen()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/lockscreen', $this->data);
+    }
+
+    public function invoice()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/invoice', $this->data);
+    }
+
+    public function blank()
+    {
+        // Display page with internal ci function
+        $this->load->view('examples/blank', $this->data);
+    }
 }
