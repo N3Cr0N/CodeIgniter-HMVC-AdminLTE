@@ -58,8 +58,14 @@ $.widget.bridge('uibutton', $.ui.button);
 <script src="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/Flot/jquery.flot.categories.js"></script>
 <!-- jQuery Knob -->
 <script src="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/jquery-knob/js/jquery.knob.js"></script>
-
-
+<!-- Bootstrap slider -->
+<script src="<?php echo base_url(); ?>assets/backend/AdminLTE/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<script>
+  $(function () {
+    /* BOOTSTRAP SLIDER */
+    $('.slider').slider()
+  })
+</script>
 
 
 
@@ -830,8 +836,6 @@ $.widget.bridge('uibutton', $.ui.button);
     setTimeout(mdraw, mrefreshinterval);
   }
 </script>
-
-
 
 </body>
 </html>
