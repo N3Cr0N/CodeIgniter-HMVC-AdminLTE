@@ -97,32 +97,32 @@ class Backend extends BackendController
 
     public function widgets()
     {
-        // Display page with internal ci function
-        $this->load->view('widgets/widgets', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('widgets/widgets', $this->data);
     }
 
     public function chartjs()
     {
-        // Display page with internal ci function
-        $this->load->view('charts/chartjs', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('charts/chartjs', $this->data);
     }
 
     public function morris()
     {
-        // Display page with internal ci function
-        $this->load->view('charts/morris', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('charts/morris', $this->data);
     }
 
     public function flot()
     {
-        // Display page with internal ci function
-        $this->load->view('charts/flot', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('charts/flot', $this->data);
     }
 
     public function inline()
     {
-        // Display page with internal ci function
-        $this->load->view('charts/inline', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('charts/inline', $this->data);
     }
 
     public function general()
