@@ -145,15 +145,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/login"><i class="fa fa-circle-o"></i> Login</a></li>
             <li><a href="<?php echo base_url(); ?>backend/register"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
             <li><a href="<?php echo base_url(); ?>backend/error_404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
             <li><a href="<?php echo base_url(); ?>backend/error_500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
