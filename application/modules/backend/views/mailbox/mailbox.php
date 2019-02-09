@@ -322,14 +322,14 @@
           </a>
           <ul class="treeview-menu">
             <li class="active">
-              <a href="mailbox.html">Inbox
+              <a href="<?php echo base_url(); ?>backend/mailbox">Inbox
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">13</span>
                 </span>
               </a>
             </li>
-            <li><a href="compose.html">Compose</a></li>
-            <li><a href="read-mail.html">Read</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/compose">Compose</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/read_mail">Read</a></li>
           </ul>
         </li>
         <li class="treeview">
