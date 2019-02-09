@@ -127,8 +127,8 @@ class Backend extends BackendController
 
     public function general()
     {
-        // Display page with internal ci function
-        $this->load->view('ui/general', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('ui/general', $this->data);
     }
 
     public function icons()
