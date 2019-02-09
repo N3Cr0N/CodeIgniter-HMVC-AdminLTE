@@ -139,8 +139,8 @@ class Backend extends BackendController
 
     public function buttons()
     {
-        // Display page with internal ci function
-        $this->load->view('ui/buttons', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('ui/buttons', $this->data);
     }
 
     public function sliders()
