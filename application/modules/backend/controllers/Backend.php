@@ -181,14 +181,14 @@ class Backend extends BackendController
 
     public function simple()
     {
-        // Display page with internal ci function
-        $this->load->view('tables/simple', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('tables/simple', $this->data);
     }
 
     public function data()
     {
-        // Display page with internal ci function
-        $this->load->view('tables/data', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('tables/data', $this->data);
     }
 
     public function calendar()
