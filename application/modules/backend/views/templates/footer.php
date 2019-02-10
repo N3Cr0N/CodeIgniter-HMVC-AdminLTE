@@ -84,14 +84,30 @@ $.widget.bridge('uibutton', $.ui.button);
 <script src="<?php echo base_url(); ?>assets/backend/AdminLTE/plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- Bootstrap slider -->
 <script src="<?php echo base_url(); ?>assets/backend/AdminLTE/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<!-- Bootstrap slider page script-->
 <script>
   $(function () {
     /* BOOTSTRAP SLIDER */
     $('.slider').slider()
   })
 </script>
-
-
+<!-- DataTables -->
+<script src="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- Datatables page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
 
 <!-- Chart.js page script -->
 <script>
