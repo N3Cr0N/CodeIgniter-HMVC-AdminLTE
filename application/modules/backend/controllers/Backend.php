@@ -157,8 +157,8 @@ class Backend extends BackendController
 
     public function modals()
     {
-        // Display page with internal ci function
-        $this->load->view('ui/modals', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('ui/modals', $this->data);
     }
 
     public function forms_general()
