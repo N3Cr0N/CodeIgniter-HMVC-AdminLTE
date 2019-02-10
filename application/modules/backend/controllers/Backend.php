@@ -199,20 +199,20 @@ class Backend extends BackendController
 
     public function mailbox()
     {
-        // Display page with internal ci function
-        $this->load->view('mailbox/mailbox', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('mailbox/mailbox', $this->data);
     }
 
     public function read_mail()
     {
-        // Display page with internal ci function
-        $this->load->view('mailbox/read-mail', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('mailbox/read-mail', $this->data);
     }
 
     public function compose()
     {
-        // Display page with internal ci function
-        $this->load->view('mailbox/compose', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('mailbox/compose', $this->data);
     }
 
     public function error_404()
