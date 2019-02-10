@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!-- DataTables -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <!-- fullCalendar -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
