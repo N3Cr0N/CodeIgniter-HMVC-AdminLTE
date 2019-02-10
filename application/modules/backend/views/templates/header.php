@@ -27,6 +27,14 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/plugins/iCheck/all.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/plugins/timepicker/bootstrap-timepicker.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/select2/dist/css/select2.min.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
