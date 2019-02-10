@@ -175,8 +175,8 @@ class Backend extends BackendController
 
     public function editors()
     {
-        // Display page with internal ci function
-        $this->load->view('forms/editors', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('forms/editors', $this->data);
     }
 
     public function simple()
