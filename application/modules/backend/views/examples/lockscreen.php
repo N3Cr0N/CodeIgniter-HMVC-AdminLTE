@@ -29,7 +29,7 @@
 <!-- Automatic element centering -->
 <div class="lockscreen-wrapper">
   <div class="lockscreen-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="<?php echo base_url(); ?>backend/index2"><b>Admin</b>LTE</a>
   </div>
   <!-- User name -->
   <div class="lockscreen-name">John Doe</div>
@@ -60,7 +60,7 @@
     Enter your password to retrieve your session
   </div>
   <div class="text-center">
-    <a href="login.html">Or sign in as a different user</a>
+    <a href="<?php echo base_url(); ?>backend/login">Or sign in as a different user</a>
   </div>
   <div class="lockscreen-footer text-center">
     Copyright &copy; 2014-2016 <b><a href="https://adminlte.io" class="text-black">Almsaeed Studio</a></b><br>
