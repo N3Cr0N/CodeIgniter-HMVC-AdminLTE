@@ -261,10 +261,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/chartjs"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -276,12 +276,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/general"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/icons"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -292,9 +292,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="../forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="../forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/forms_general"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/forms_advanced"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/editors"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -305,8 +305,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="../tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/simple"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/data"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
@@ -319,7 +319,7 @@
           </a>
         </li>
         <li>
-          <a href="../mailbox/mailbox.html">
+          <a href="<?php echo base_url(); ?>backend/mailbox">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
@@ -336,15 +336,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="../examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/login"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/error_404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/error_500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo base_url(); ?>backend/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
