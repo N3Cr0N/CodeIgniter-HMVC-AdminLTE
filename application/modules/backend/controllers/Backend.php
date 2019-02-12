@@ -16,17 +16,14 @@
 
 class Backend extends BackendController
 {
-
     //
     public $CI;
 
     /**
      * An array of variables to be passed through to the
-     * view, layout,....
+     * view, layouts, ....
      */
     protected $data = array();
-
-
 
     /**
      * [__construct description]
@@ -51,8 +48,8 @@ class Backend extends BackendController
      */
     public function index()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('dashboard/index', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('dashboard/index', $this->data, true);
     }
 
     /**
@@ -64,214 +61,448 @@ class Backend extends BackendController
      */
     public function index2()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('dashboard/index2', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('dashboard/index2', $this->data, true);
     }
 
-
-
-////////////////////////////////////////////////
+    /**
+     * [top_nav description]
+     *
+     * @method top_nav
+     *
+     * @return [type]  [description]
+     */
     public function top_nav()
     {
-        // Display page with internal ci function
-        $this->load->view('layout/top-nav', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('layout/top-nav', $this->data, false);
     }
 
+    /**
+     * [boxed description]
+     *
+     * @method boxed
+     *
+     * @return [type] [description]
+     */
     public function boxed()
     {
-        // Display page with internal ci function
-        $this->load->view('layout/boxed', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('layout/boxed', $this->data, false);
     }
 
+    /**
+     * [fixed description]
+     *
+     * @method fixed
+     *
+     * @return [type] [description]
+     */
     public function fixed()
     {
-        // Display page with internal ci function
-        $this->load->view('layout/fixed', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('layout/fixed', $this->data, false);
     }
 
+    /**
+     * [collapsed_sidebar description]
+     *
+     * @method collapsed_sidebar
+     *
+     * @return [type]            [description]
+     */
     public function collapsed_sidebar()
     {
-        // Display page with internal ci function
-        $this->load->view('layout/collapsed-sidebar', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('layout/collapsed-sidebar', $this->data, false);
     }
 
+    /**
+     * [widgets description]
+     *
+     * @method widgets
+     *
+     * @return [type]  [description]
+     */
     public function widgets()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('widgets/widgets', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('widgets/widgets', $this->data, true);
     }
 
+    /**
+     * [chartjs description]
+     *
+     * @method chartjs
+     *
+     * @return [type]  [description]
+     */
     public function chartjs()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('charts/chartjs', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('charts/chartjs', $this->data, true);
     }
 
+    /**
+     * [morris description]
+     *
+     * @method morris
+     *
+     * @return [type] [description]
+     */
     public function morris()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('charts/morris', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('charts/morris', $this->data, true);
     }
 
+    /**
+     * [flot description]
+     *
+     * @method flot
+     *
+     * @return [type] [description]
+     */
     public function flot()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('charts/flot', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('charts/flot', $this->data, true);
     }
 
+    /**
+     * [inline description]
+     *
+     * @method inline
+     *
+     * @return [type] [description]
+     */
     public function inline()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('charts/inline', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('charts/inline', $this->data, true);
     }
 
+    /**
+     * [general description]
+     *
+     * @method general
+     *
+     * @return [type]  [description]
+     */
     public function general()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('ui/general', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('ui/general', $this->data, true);
     }
-
+    /**
+     * [icons description]
+     *
+     * @method icons
+     *
+     * @return [type] [description]
+     */
     public function icons()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('ui/icons', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('ui/icons', $this->data, true);
     }
 
+    /**
+     * [buttons description]
+     *
+     * @method buttons
+     *
+     * @return [type]  [description]
+     */
     public function buttons()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('ui/buttons', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('ui/buttons', $this->data, true);
     }
 
+    /**
+     * [sliders description]
+     *
+     * @method sliders
+     *
+     * @return [type]  [description]
+     */
     public function sliders()
     {
-        // Display page with internal ci function
-        $this->load->view('ui/sliders', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('ui/sliders', $this->data, true);
     }
 
+    /**
+     * [timeline description]
+     *
+     * @method timeline
+     *
+     * @return [type]   [description]
+     */
     public function timeline()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('ui/timeline', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('ui/timeline', $this->data, true);
     }
 
+    /**
+     * [modals description]
+     *
+     * @method modals
+     *
+     * @return [type] [description]
+     */
     public function modals()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('ui/modals', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('ui/modals', $this->data, true);
     }
 
+    /**
+     * [forms_general description]
+     *
+     * @method forms_general
+     *
+     * @return [type]        [description]
+     */
     public function forms_general()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('forms/general', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('forms/general', $this->data, true);
     }
 
+    /**
+     * [forms_advanced description]
+     *
+     * @method forms_advanced
+     *
+     * @return [type]         [description]
+     */
     public function forms_advanced()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('forms/advanced', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('forms/advanced', $this->data, true);
     }
 
+    /**
+     * [editors description]
+     *
+     * @method editors
+     *
+     * @return [type]  [description]
+     */
     public function editors()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('forms/editors', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('forms/editors', $this->data, true);
     }
 
+    /**
+     * [simple description]
+     *
+     * @method simple
+     *
+     * @return [type] [description]
+     */
     public function simple()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('tables/simple', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('tables/simple', $this->data, true);
     }
 
+    /**
+     * [data description]
+     *
+     * @method data
+     *
+     * @return [type] [description]
+     */
     public function data()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('tables/data', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('tables/data', $this->data, true);
     }
 
+    /**
+     * [calendar description]
+     *
+     * @method calendar
+     *
+     * @return [type]   [description]
+     */
     public function calendar()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('calendar/calendar', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('calendar/calendar', $this->data, true);
     }
 
+    /**
+     * [mailbox description]
+     *
+     * @method mailbox
+     *
+     * @return [type]  [description]
+     */
     public function mailbox()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('mailbox/mailbox', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('mailbox/mailbox', $this->data, true);
     }
 
+    /**
+     * [read_mail description]
+     *
+     * @method read_mail
+     *
+     * @return [type]    [description]
+     */
     public function read_mail()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('mailbox/read-mail', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('mailbox/read-mail', $this->data, true);
     }
 
+    /**
+     * [compose description]
+     *
+     * @method compose
+     *
+     * @return [type]  [description]
+     */
     public function compose()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('mailbox/compose', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('mailbox/compose', $this->data, true);
     }
 
+    /**
+     * [error_404 description]
+     *
+     * @method error_404
+     *
+     * @return [type]    [description]
+     */
     public function error_404()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('examples/error_404', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/error_404', $this->data, true);
     }
 
+    /**
+     * [error_500 description]
+     *
+     * @method error_500
+     *
+     * @return [type]    [description]
+     */
     public function error_500()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('examples/error_500', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/error_500', $this->data, true);
     }
 
+    /**
+     * [register description]
+     *
+     * @method register
+     *
+     * @return [type]   [description]
+     */
     public function register()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/register', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/register', $this->data, false);
     }
 
+    /**
+     * [profile description]
+     *
+     * @method profile
+     *
+     * @return [type]  [description]
+     */
     public function profile()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('examples/profile', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/profile', $this->data, true);
     }
 
+    /**
+     * [pace description]
+     *
+     * @method pace
+     *
+     * @return [type] [description]
+     */
     public function pace()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('examples/pace', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/pace', $this->data, true);
     }
 
+    /**
+     * [login description]
+     *
+     * @method login
+     *
+     * @return [type] [description]
+     */
     public function login()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/login', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/login', $this->data, false);
     }
 
+    /**
+     * [lockscreen description]
+     *
+     * @method lockscreen
+     *
+     * @return [type]     [description]
+     */
     public function lockscreen()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/lockscreen', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/lockscreen', $this->data, false);
     }
 
+    /**
+     * [invoice description]
+     *
+     * @method invoice
+     *
+     * @return [type]  [description]
+     */
     public function invoice()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('examples/invoice', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/invoice', $this->data, true);
     }
 
+    /**
+     * [invoice_print description]
+     *
+     * @method invoice_print
+     *
+     * @return [type]        [description]
+     */
     public function invoice_print()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/invoice_print', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/invoice_print', $this->data, true);
     }
 
+    /**
+     * [blank description]
+     *
+     * @method blank
+     *
+     * @return [type] [description]
+     */
     public function blank()
     {
-        // Display page with render_page function from BackendController
-        $this->render_page('examples/blank', $this->data);
+        // Display page with the template function from MY_Controller
+        $this->template('examples/blank', $this->data, true);
     }
 }
