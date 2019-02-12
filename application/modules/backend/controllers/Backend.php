@@ -490,7 +490,7 @@ class Backend extends BackendController
     public function invoice_print()
     {
         // Display page with the template function from MY_Controller
-        $this->template('examples/invoice_print', $this->data, true);
+        $this->template('examples/invoice_print', $this->data, false);
     }
 
     /**
