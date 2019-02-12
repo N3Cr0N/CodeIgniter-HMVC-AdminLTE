@@ -217,14 +217,14 @@ class Backend extends BackendController
 
     public function error_404()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/error_404', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('examples/error_404', $this->data);
     }
 
     public function error_500()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/error_500', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('examples/error_500', $this->data);
     }
 
     public function register()
@@ -235,14 +235,14 @@ class Backend extends BackendController
 
     public function profile()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/profile', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('examples/profile', $this->data);
     }
 
     public function pace()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/pace', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('examples/pace', $this->data);
     }
 
     public function login()
@@ -259,13 +259,19 @@ class Backend extends BackendController
 
     public function invoice()
     {
+        // Display page with render_page function from BackendController
+        $this->render_page('examples/invoice', $this->data);
+    }
+
+    public function invoice_print()
+    {
         // Display page with internal ci function
-        $this->load->view('examples/invoice', $this->data);
+        $this->load->view('examples/invoice_print', $this->data);
     }
 
     public function blank()
     {
-        // Display page with internal ci function
-        $this->load->view('examples/blank', $this->data);
+        // Display page with render_page function from BackendController
+        $this->render_page('examples/blank', $this->data);
     }
 }
