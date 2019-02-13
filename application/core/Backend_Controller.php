@@ -45,7 +45,7 @@ class BackendController extends MY_Controller
 
         //Example data
         // Site name
-        $this->data['sitename'] = 'CodeIgniter-HMVC-Ion-Auth-AdminLTE';
+        $this->data['sitename'] = 'CodeIgniter-HMVC-AdminLTE';
 
         //Example data
         // Browser tab
