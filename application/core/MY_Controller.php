@@ -48,6 +48,34 @@ class MY_Controller extends MX_Controller
         // Copyright
         $this->data['copyright'] = $date;
     }
+
+    /**
+     * Template loading function for AdminLTE
+     *
+     * @method template
+     *
+     * @param  string   $template_name The template name
+     * @param  array    $data          All extra datas you want to display
+     * @param  boolean  $return        Load the complete template structure
+     *                                 with the menues, sidebar, ... or only the page template
+     *
+     * @return [type]                  Display the template
+     */
+    protected function template($template_name, $data, $return)
+    {
+        if ($return === true) {
+            $content  = $this->load->view('templates/header', $this->data);
+            $content .= $this->load->view('templates/main_header', $this->data);
+            $content .= $this->load->view('templates/main_sidebar', $this->data);
+            $content .= $this->load->view($template_name, $this->data);
+            $content .= $this->load->view('templates/footer', $this->data);
+            $content .= $this->load->view('templates/control_sidebar', $this->data);
+
+            return $content;
+        } else {
+            $this->load->view($template_name, $this->data);
+        }
+    }
 }
 
 // Backend controller
