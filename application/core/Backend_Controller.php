@@ -45,7 +45,7 @@ class BackendController extends MY_Controller
 
         //Example data
         // Site name
-        $this->data['sitename'] = 'CodeIgniter-HMVC-Ion-Auth-AdminLTE';
+        $this->data['sitename'] = 'CodeIgniter-HMVC-AdminLTE';
 
         //Example data
         // Browser tab
@@ -53,22 +53,30 @@ class BackendController extends MY_Controller
     }
 
     /**
-     * [render_page description]
+     * Template loading function for AdminLTE
      *
-     * @method render_page
+     * @method template
      *
-     * @param  [type]      $view [description]
-     * @param  [type]      $data [description]
+     * @param  string   $template_name The template name
+     * @param  array    $data          All extra datas you want to display
+     * @param  boolean  $return        Load the complete template structure
+     *                                 with the menues, sidebar, ... or only the page template
      *
-     * @return [type]            [description]
+     * @return [type]                  Display the template
      */
-    protected function render_page($view, $data)
+    protected function template($template_name, $data, $return)
     {
-        $this->load->view('templates/header', $this->data);
-        $this->load->view('templates/main_header', $this->data);
-        $this->load->view('templates/main_sidebar', $this->data);
-        $this->load->view($view, $this->data);
-        $this->load->view('templates/footer', $this->data);
-        $this->load->view('templates/control_sidebar', $this->data);
+        if ($return === true) {
+            $content  = $this->load->view('templates/header', $this->data);
+            $content .= $this->load->view('templates/main_header', $this->data);
+            $content .= $this->load->view('templates/main_sidebar', $this->data);
+            $content .= $this->load->view($template_name, $this->data);
+            $content .= $this->load->view('templates/footer', $this->data);
+            $content .= $this->load->view('templates/control_sidebar', $this->data);
+
+            return $content;
+        } else {
+            $this->load->view($template_name, $this->data);
+        }
     }
 }
