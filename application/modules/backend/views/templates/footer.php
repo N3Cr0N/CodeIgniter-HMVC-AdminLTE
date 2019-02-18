@@ -15,7 +15,7 @@ reserved.
 <script>
 $.widget.bridge('uibutton', $.ui.button);
 </script>
-<!-- Bootstrap 3.3.7 -->
+<!-- Bootstrap 3.4.1 -->
 <script src="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->
 <script src="<?php echo base_url(); ?>assets/backend/AdminLTE/bower_components/raphael/raphael.min.js"></script>
