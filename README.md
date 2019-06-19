@@ -2,7 +2,7 @@
 
 
 # CodeIgniter-HMVC-AdminLTE
-CodeIgniter 3.1.10 with HMVC (With PHP backward functions for each() and list() and code optimisations -> https://github.com/N3Cr0N/HMVC), Whoops Error Handling Framework -> https://github.com/filp/whoops and AdminLTE 2.4.10 -> https://github.com/almasaeed2010/AdminLTE
+CodeIgniter 3.1.10 with HMVC (With PHP backward functions for each() and list() and code optimisations -> https://github.com/N3Cr0N/HMVC), Whoops Error Handling Framework -> https://github.com/filp/whoops and AdminLTE 2.4.12 -> https://github.com/ColorlibHQ/AdminLTE
 
 # Modular Extensions - HMVC
 
@@ -255,7 +255,7 @@ reserves the right to change the license of future releases. Wondering what you 
 AdminLTE 1.x can be easily upgraded to 2.x using [this guide](https://adminlte.io/themes/AdminLTE/documentation/index.html#upgrade), but if you intend to keep using AdminLTE 1.x, you can download the latest release from the [releases](https://github.com/almasaeed2010/AdminLTE/releases) section above.
 
 ### Change log
-**For the most recent change log, visit the [releases page](https://github.com/almasaeed2010/AdminLTE/releases) or the [changelog file](https://github.com/almasaeed2010/AdminLTE/blob/master/changelog.md).** We will add detailed release notes to each new release. 
+**For the most recent change log, visit the [releases page](https://github.com/ColorlibHQ/AdminLTE/releases) or the [changelog file](https://github.com/ColorlibHQ/AdminLTE/blob/master/changelog.md).** We will add detailed release notes to each new release. 
 
 ### Image Credits
 - [Pixeden](http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd)
@@ -275,7 +275,7 @@ AdminLTE 1.x can be easily upgraded to 2.x using [this guide](https://adminlte.i
 * [Whoops](https://github.com/filp/whoops)
 
 ## Source AdminLTE
-* [AdminLTE](https://github.com/almasaeed2010/AdminLTE)
+* [AdminLTE](https://github.com/ColorlibHQ/AdminLTE)
 
 ## Source CodeIgniter
 * [CodeIgniter](https://github.com/bcit-ci/CodeIgniter)
