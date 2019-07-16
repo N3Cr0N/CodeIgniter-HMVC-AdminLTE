@@ -6,7 +6,7 @@
 *
 * @author Colorlib
 * @support <https://github.com/ColorlibHQ/AdminLTE/issues>
-* @version 2.4.12
+* @version 2.4.13
 * @repository git://github.com/ColorlibHQ/AdminLTE.git
 * @license MIT <http://opensource.org/licenses/MIT>
 */
@@ -900,6 +900,7 @@ throw new Error('AdminLTE requires jQuery')
     parent.addClass(ClassName.open);
     tree.slideDown(this.options.animationSpeed, function () {
       $(this.element).trigger(expandedEvent);
+      parent.height('auto');
     }.bind(this));
   };
 
@@ -911,6 +912,9 @@ throw new Error('AdminLTE requires jQuery')
     tree.slideUp(this.options.animationSpeed, function () {
       //tree.find(Selector.open + ' > ' + Selector.treeview).slideUp();
       $(this.element).trigger(collapsedEvent);
+
+      // Collapse child items
+      parentLi.find(Selector.treeview).removeClass(ClassName.open).find(Selector.treeviewMenu).hide();
     }.bind(this));
   };
 
@@ -986,6 +990,8 @@ throw new Error('AdminLTE requires jQuery')
     layoutBoxed   : '.layout-boxed',
     mainFooter    : '.main-footer',
     mainHeader    : '.main-header',
+    mainSidebar   : '.main-sidebar',
+    slimScrollDiv : 'slimScrollDiv',
     sidebar       : '.sidebar',
     controlSidebar: '.control-sidebar',
     fixed         : '.fixed',
@@ -1093,9 +1099,11 @@ throw new Error('AdminLTE requires jQuery')
         // $(Selector.sidebar).slimScroll({ destroy: true }).height('auto')
 
         // Add slimscroll
-        $(Selector.sidebar).slimScroll({
-          height: ($(window).height() - $(Selector.mainHeader).height()) + 'px'
-        });
+        if ($(Selector.mainSidebar).find(Selector.slimScrollDiv).length === 0) {
+          $(Selector.sidebar).slimScroll({
+            height: ($(window).height() - $(Selector.mainHeader).height()) + 'px'
+          });
+        }
       }
     }
   };
