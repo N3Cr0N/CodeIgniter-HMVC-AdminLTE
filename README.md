@@ -2,7 +2,7 @@
 
 
 # CodeIgniter-HMVC-AdminLTE
-CodeIgniter 3.1.10 with HMVC (With PHP backward functions for each() and list() and code optimisations -> https://github.com/N3Cr0N/HMVC), Whoops Error Handling Framework -> https://github.com/filp/whoops and AdminLTE 2.4.12 -> https://github.com/ColorlibHQ/AdminLTE
+CodeIgniter 3.1.10 with HMVC (With PHP backward functions for each() and list() and code optimisations -> https://github.com/N3Cr0N/HMVC), Whoops Error Handling Framework -> https://github.com/filp/whoops and AdminLTE 2.4.13 -> https://github.com/ColorlibHQ/AdminLTE
 
 # Modular Extensions - HMVC
 
