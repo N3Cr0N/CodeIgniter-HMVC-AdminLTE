@@ -2,7 +2,7 @@
 
 
 # CodeIgniter-HMVC-AdminLTE
-CodeIgniter 3.1.10 with HMVC (With PHP backward functions for each() and list() and code optimisations -> https://github.com/N3Cr0N/HMVC), Whoops Error Handling Framework -> https://github.com/filp/whoops and AdminLTE 2.4.13 -> https://github.com/ColorlibHQ/AdminLTE
+CodeIgniter v3.1.10 with HMVC (With PHP backward functions for each() and list() and code optimisations -> https://github.com/N3Cr0N/HMVC), Whoops Error Handling Framework v2.5.0 -> https://github.com/filp/whoops and AdminLTE v2.4.13 -> https://github.com/ColorlibHQ/AdminLTE
 
 # Modular Extensions - HMVC
 
@@ -17,8 +17,8 @@ Module Controllers can be used as normal Controllers or HMVC Controllers and the
 All controllers can contain an $autoload class variable, which holds an array of items to load prior to running the constructor. This can be used together with module/config/autoload.php, however using the $autoload variable only works for that specific controller.
 
 ```
-<?php     
-class Xyz extends MX_Controller 
+<?php
+class Xyz extends MX_Controller
 {
     $autoload = array(
         'helper'    => array('url', 'form'),
@@ -57,7 +57,7 @@ You must use PHP5 style constructors in your controllers. ie:
 
 ```
 <?php
-class Xyz extends MX_Controller 
+class Xyz extends MX_Controller
 {
     function __construct()
     {
@@ -116,8 +116,8 @@ When using form validation with MX you will need to extend the CI_Form_validatio
 
 ```
 <?php
-/** application/libraries/MY_Form_validation **/ 
-class MY_Form_validation extends CI_Form_validation 
+/** application/libraries/MY_Form_validation **/
+class MY_Form_validation extends CI_Form_validation
 {
     public $CI;
 }
@@ -127,7 +127,7 @@ before assigning the current controller as the $CI variable to the form_validati
 
 ```
 <?php
-class Xyz extends MX_Controller 
+class Xyz extends MX_Controller
 {
     function __construct()
     {
@@ -170,7 +170,7 @@ In CI we can’t call more than 1 controller per request. Therefore, to achieve 
 
 The differences between using a library and a “Modular HMVC” HMVC class is:
 
-1. No need to get and use the CI instance within an HMVC class 
+1. No need to get and use the CI instance within an HMVC class
 2. HMVC classes are stored in a modules directory as opposed to the libraries directory.
 
 **Q. Is Modular Extensions HMVC the same as Modular Separation?**
@@ -255,7 +255,7 @@ reserves the right to change the license of future releases. Wondering what you 
 AdminLTE 1.x can be easily upgraded to 2.x using [this guide](https://adminlte.io/themes/AdminLTE/documentation/index.html#upgrade), but if you intend to keep using AdminLTE 1.x, you can download the latest release from the [releases](https://github.com/almasaeed2010/AdminLTE/releases) section above.
 
 ### Change log
-**For the most recent change log, visit the [releases page](https://github.com/ColorlibHQ/AdminLTE/releases) or the [changelog file](https://github.com/ColorlibHQ/AdminLTE/blob/master/changelog.md).** We will add detailed release notes to each new release. 
+**For the most recent change log, visit the [releases page](https://github.com/ColorlibHQ/AdminLTE/releases) or the [changelog file](https://github.com/ColorlibHQ/AdminLTE/blob/master/changelog.md).** We will add detailed release notes to each new release.
 
 ### Image Credits
 - [Pixeden](http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd)
